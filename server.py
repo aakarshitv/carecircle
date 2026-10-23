@@ -13,7 +13,7 @@ from mcp.server.mcpserver import MCPServer
 MISSED_AFTER = timedelta(hours=2)  # a dose with no check-in this long after its time is "missed"
 DB_PATH = os.environ.get("CARECIRCLE_DB", "carecircle.db")
 
-mcp = MCPServer("CareCircle", instructions="Medication check-ins for elders and their families.")
+mcp = MCPServer("CareCircle", version="0.1.0", instructions="Medication check-ins for elders and their families.")
 
 
 def db():
